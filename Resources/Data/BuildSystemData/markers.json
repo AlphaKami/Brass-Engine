@@ -1,0 +1,12 @@
+{
+  "markers": [
+    "default_mark",
+    "support",
+    "floor",
+    "wall",
+    "attachable",
+    "shaft",
+    "gear_center",
+    "small_gear_attachment"
+  ]
+}

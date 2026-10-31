@@ -1,0 +1,9 @@
+Large_Gear_Right 0 0 48 48 96 0.1 1
+Large_Gear_Left 0 48 48 48 96 0.1 1
+Large_Gear_Vert 0 96 48 48 96 0.1 1
+Gear_Right 0 144 32 32 24 0.1 1
+Gear_Left 0 176 32 32 24 0.1 1
+Gear_Vert 0 208 32 32 24 0.1 1
+Shaft_Right 0 240 32 32 48 0.1 1
+Shaft_Left 0 272 32 32 48 0.1 1
+Shaft_Vert 0 304 32 32 48 0.1 1

@@ -1,0 +1,18 @@
+# CLion
+.idea/
+
+# vcpkg
+vcpkg/
+vcpkg_installed/
+
+# Others
+build/
+out/
+cmake-build-*/
+
+# Graphics
+Resources/Assets/Textures/
+
+# OS
+.DS_Store
+Thumbs.db

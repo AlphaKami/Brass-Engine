@@ -1,0 +1,38 @@
+{
+  "items": [
+    {
+      "id": "iron_ore",
+      "displayName": "Iron Ore",
+      "weight": 2.0
+    },
+    {
+      "id": "coal",
+      "displayName": "Coal",
+      "weight": 1.5
+    },
+    {
+      "id": "iron_plate",
+      "displayName": "Iron Plate",
+      "weight": 3.0
+    },
+    {
+      "id": "slag",
+      "displayName": "Slag",
+      "weight": 1.0
+    }
+  ],
+  "fluids": [
+    {
+      "id": "water",
+      "displayName": "Water",
+      "density": 1.0
+    }
+  ],
+  "gases": [
+    {
+      "id": "steam",
+      "displayName": "Steam",
+      "pressure": 1.0
+    }
+  ]
+}

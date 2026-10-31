@@ -1,0 +1,4 @@
+default_tile        0  0  32 32
+default_wallR       32 0  32 32
+default_wallL       64 0  32 32
+default_corner      96 0  32 32

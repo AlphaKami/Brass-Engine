@@ -1,0 +1,144 @@
+{
+  "kinetic": [
+    {
+      "buildable": "shaft",
+      "orientations": [
+        {
+          "orientation": 0, "axis": "x", "frameSpan": 0.25,
+          "links": [
+            { "kind": "coupled", "offset": [0, 0, 0], "marker": "gear_center" },
+            { "kind": "coupled", "offset": [1, 0, 0], "marker": "shaft" },
+            { "kind": "coupled", "offset": [-1, 0, 0], "marker": "shaft" },
+            { "kind": "coupled", "offset": [1, 0, 0], "marker": "gear_center" },
+            { "kind": "coupled", "offset": [-1, 0, 0], "marker": "gear_center" }
+          ]
+        },
+        {
+          "orientation": 1, "axis": "y", "frameSpan": 0.25,
+          "links": [
+            { "kind": "coupled", "offset": [0, 0, 0], "marker": "gear_center" },
+            { "kind": "coupled", "offset": [0, 1, 0], "marker": "shaft" },
+            { "kind": "coupled", "offset": [0, -1, 0], "marker": "shaft" },
+            { "kind": "coupled", "offset": [0, 1, 0], "marker": "gear_center" },
+            { "kind": "coupled", "offset": [0, -1, 0], "marker": "gear_center" }
+          ]
+        },
+        {
+          "orientation": 2, "axis": "z", "frameSpan": 0.25,
+          "links": [
+            { "kind": "coupled", "offset": [0, 0, 0], "marker": "gear_center" },
+            { "kind": "coupled", "offset": [0, 0, 1], "marker": "shaft" },
+            { "kind": "coupled", "offset": [0, 0, -1], "marker": "shaft" },
+            { "kind": "coupled", "offset": [0, 0, 1], "marker": "gear_center" },
+            { "kind": "coupled", "offset": [0, 0, -1], "marker": "gear_center" }
+          ]
+        }
+      ]
+    },
+    {
+      "buildable": "gear",
+      "orientations": [
+        {
+          "orientation": 0, "axis": "x", "teeth": 8, "frameSpan": 0.125,
+          "links": [
+            { "kind": "coupled", "offset": [0, 0, 0], "marker": "shaft" },
+            { "kind": "mesh", "offset": [0, 1, 0], "marker": "gear_center" },
+            { "kind": "mesh", "offset": [0, -1, 0], "marker": "gear_center" },
+            { "kind": "mesh", "offset": [0, 0, 1], "marker": "gear_center" },
+            { "kind": "mesh", "offset": [0, 0, -1], "marker": "gear_center" },
+            { "kind": "mesh", "offset": [0, 0, 0], "marker": "small_gear_attachment" }
+          ]
+        },
+        {
+          "orientation": 1, "axis": "y", "teeth": 8, "frameSpan": 0.125,
+          "links": [
+            { "kind": "coupled", "offset": [0, 0, 0], "marker": "shaft" },
+            { "kind": "mesh", "offset": [1, 0, 0], "marker": "gear_center" },
+            { "kind": "mesh", "offset": [-1, 0, 0], "marker": "gear_center" },
+            { "kind": "mesh", "offset": [0, 0, 1], "marker": "gear_center" },
+            { "kind": "mesh", "offset": [0, 0, -1], "marker": "gear_center" },
+            { "kind": "mesh", "offset": [0, 0, 0], "marker": "small_gear_attachment" }
+          ]
+        },
+        {
+          "orientation": 2, "axis": "z", "teeth": 8, "frameSpan": 0.125,
+          "links": [
+            { "kind": "coupled", "offset": [0, 0, 0], "marker": "shaft" },
+            { "kind": "mesh", "offset": [1, 0, 0], "marker": "gear_center" },
+            { "kind": "mesh", "offset": [-1, 0, 0], "marker": "gear_center" },
+            { "kind": "mesh", "offset": [0, 1, 0], "marker": "gear_center" },
+            { "kind": "mesh", "offset": [0, -1, 0], "marker": "gear_center" },
+            { "kind": "mesh", "offset": [0, 0, 0], "marker": "small_gear_attachment" }
+          ]
+        }
+      ]
+    },
+    {
+      "buildable": "large_gear",
+      "orientations": [
+        {
+          "orientation": 0, "axis": "x", "teeth": 16, "frameSpan": 0.5,
+          "links": [
+            { "kind": "coupled", "offset": [0, 0, 0], "marker": "shaft" },
+            { "kind": "mesh", "offset": [0, 1, 1], "marker": "gear_center" },
+            { "kind": "mesh", "offset": [0, -1, 1], "marker": "gear_center" },
+            { "kind": "mesh", "offset": [0, 1, -1], "marker": "gear_center" },
+            { "kind": "mesh", "offset": [0, -1, -1], "marker": "gear_center" }
+          ]
+        },
+        {
+          "orientation": 1, "axis": "y", "teeth": 16, "frameSpan": 0.5,
+          "links": [
+            { "kind": "coupled", "offset": [0, 0, 0], "marker": "shaft" },
+            { "kind": "mesh", "offset": [1, 0, 1], "marker": "gear_center" },
+            { "kind": "mesh", "offset": [-1, 0, 1], "marker": "gear_center" },
+            { "kind": "mesh", "offset": [1, 0, -1], "marker": "gear_center" },
+            { "kind": "mesh", "offset": [-1, 0, -1], "marker": "gear_center" }
+          ]
+        },
+        {
+          "orientation": 2, "axis": "z", "teeth": 16, "frameSpan": 0.5,
+          "links": [
+            { "kind": "coupled", "offset": [0, 0, 0], "marker": "shaft" },
+            { "kind": "mesh", "offset": [1, 1, 0], "marker": "gear_center" },
+            { "kind": "mesh", "offset": [-1, 1, 0], "marker": "gear_center" },
+            { "kind": "mesh", "offset": [1, -1, 0], "marker": "gear_center" },
+            { "kind": "mesh", "offset": [-1, -1, 0], "marker": "gear_center" }
+          ]
+        }
+      ]
+    },
+    {
+      "buildable": "motor",
+      "orientations": [
+        {
+          "orientation": 0, "axis": "x", "frameSpan": 0.25, "source": { "speed": 0.1 },
+          "links": [
+            { "kind": "coupled", "offset": [1, 0, 0], "marker": "shaft" },
+            { "kind": "coupled", "offset": [-1, 0, 0], "marker": "shaft" },
+            { "kind": "coupled", "offset": [1, 0, 0], "marker": "gear_center" },
+            { "kind": "coupled", "offset": [-1, 0, 0], "marker": "gear_center" }
+          ]
+        },
+        {
+          "orientation": 1, "axis": "y", "frameSpan": 0.25, "source": { "speed": 0.25 },
+          "links": [
+            { "kind": "coupled", "offset": [0, 1, 0], "marker": "shaft" },
+            { "kind": "coupled", "offset": [0, -1, 0], "marker": "shaft" },
+            { "kind": "coupled", "offset": [0, 1, 0], "marker": "gear_center" },
+            { "kind": "coupled", "offset": [0, -1, 0], "marker": "gear_center" }
+          ]
+        },
+        {
+          "orientation": 2, "axis": "z", "frameSpan": 0.25, "source": { "speed": 0.25 },
+          "links": [
+            { "kind": "coupled", "offset": [0, 0, 1], "marker": "shaft" },
+            { "kind": "coupled", "offset": [0, 0, -1], "marker": "shaft" },
+            { "kind": "coupled", "offset": [0, 0, 1], "marker": "gear_center" },
+            { "kind": "coupled", "offset": [0, 0, -1], "marker": "gear_center" }
+          ]
+        }
+      ]
+    }
+  ]
+}

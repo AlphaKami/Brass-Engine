@@ -1,0 +1,20 @@
+{
+  "recipes": [
+    {
+      "id": "smelt_iron_ore",
+      "displayName": "Smelt Iron Ore",
+      "machine": "foundry",
+      "processingTime": 2.0,
+      "inputs": [
+        { "resource": "iron_ore", "type": "item", "amount": 2 },
+        { "resource": "coal", "type": "item", "amount": 1 }
+      ],
+      "outputs": [
+        { "resource": "iron_plate", "type": "item", "amount": 1 }
+      ],
+      "byproducts": [
+        { "resource": "slag", "type": "item", "amount": 1, "probability": 0.3 , "associatedOutput":  "iron_plate" }
+      ]
+    }
+  ]
+}

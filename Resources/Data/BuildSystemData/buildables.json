@@ -1,0 +1,198 @@
+{
+  "buildables": [
+    {
+      "id": "test_crate", "isEntity": false,
+      "configurations": [
+        {
+          "orientation": 0,
+          "cells": [
+            { "offset": [0, 0, 0],  "markers": ["default_mark"] },
+            { "offset": [0, 0, -1], "predicate": { "type": "hasMarker", "marker": "support" } }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "shaft", "isEntity": true,
+      "cells": [
+        {
+          "offset": [0, 0, 0], "markers": ["shaft"],
+          "predicate": {
+            "type": "anyOf",
+            "predicates": [
+              { "type": "empty" },
+              {
+                "type": "allOf",
+                "predicates": [
+                  { "type": "hasMarker", "marker": "gear_center", "matchOrientation": true },
+                  { "type": "not", "predicate": { "type": "hasMarker", "marker": "shaft" } }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "configurations": [
+        { "orientation": 0 },
+        { "orientation": 1 },
+        { "orientation": 2 }
+      ]
+    },
+
+    {
+      "id": "gear", "isEntity": true,
+      "cells": [
+        {
+          "offset": [0, 0, 0], "markers": ["gear_center"],
+          "predicate": {
+            "type": "anyOf",
+            "predicates": [
+              { "type": "empty" },
+              {
+                "type": "allOf",
+                "predicates": [
+                  { "type": "not", "predicate": { "type": "hasMarker", "marker": "gear_center" } },
+                  {
+                    "type": "anyOf",
+                    "predicates": [
+                      { "type": "hasMarker", "marker": "shaft", "matchOrientation": true },
+                      { "type": "hasMarker", "marker": "small_gear_attachment", "matchOrientation": true }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "configurations": [
+        { "orientation": 0 },
+        { "orientation": 1 },
+        { "orientation": 2 }
+      ]
+    },
+
+    {
+      "id": "large_gear",
+      "isEntity": true,
+      "configurations": [
+        {
+          "orientation": 0,
+          "cells": [
+            {
+              "offset": [0, 0, 0], "markers": ["gear_center"],
+              "predicate": {
+                "type": "anyOf",
+                "predicates": [
+                  { "type": "empty" },
+                  {
+                    "type": "allOf",
+                    "predicates": [
+                      { "type": "hasMarker", "marker": "shaft", "matchOrientation": true },
+                      { "type": "not", "predicate": { "type": "hasMarker", "marker": "gear_center" } }
+                    ]
+                  }
+                ]
+              }
+            },
+            { "offset": [0, -1, 0],  "markers": ["default_mark"] },
+            { "offset": [0, 1, 0],   "markers": ["default_mark"] },
+            { "offset": [0, 0, -1],  "markers": ["default_mark"] },
+            { "offset": [0, 0, 1],   "markers": ["default_mark"] },
+            { "offset": [0, 1, 1],   "markers": ["small_gear_attachment"] },
+            { "offset": [0, -1, 1],  "markers": ["small_gear_attachment"] },
+            { "offset": [0, 1, -1],  "markers": ["small_gear_attachment"] },
+            { "offset": [0, -1, -1], "markers": ["small_gear_attachment"] }
+          ]
+        },
+        {
+          "orientation": 1,
+          "cells": [
+            {
+              "offset": [0, 0, 0], "markers": ["gear_center"],
+              "predicate": {
+                "type": "anyOf",
+                "predicates": [
+                  { "type": "empty" },
+                  {
+                    "type": "allOf",
+                    "predicates": [
+                      { "type": "hasMarker", "marker": "shaft", "matchOrientation": true },
+                      { "type": "not", "predicate": { "type": "hasMarker", "marker": "gear_center" } }
+                    ]
+                  }
+                ]
+              }
+            },
+            { "offset": [-1, 0, 0],  "markers": ["default_mark"] },
+            { "offset": [1, 0, 0],   "markers": ["default_mark"] },
+            { "offset": [0, 0, -1],  "markers": ["default_mark"] },
+            { "offset": [0, 0, 1],   "markers": ["default_mark"] },
+            { "offset": [1, 0, 1],   "markers": ["small_gear_attachment"] },
+            { "offset": [-1, 0, 1],  "markers": ["small_gear_attachment"] },
+            { "offset": [1, 0, -1],  "markers": ["small_gear_attachment"] },
+            { "offset": [-1, 0, -1], "markers": ["small_gear_attachment"] }
+          ]
+        },
+        {
+          "orientation": 2,
+          "cells": [
+            {
+              "offset": [0, 0, 0], "markers": ["gear_center"],
+              "predicate": {
+                "type": "anyOf",
+                "predicates": [
+                  { "type": "empty" },
+                  {
+                    "type": "allOf",
+                    "predicates": [
+                      { "type": "hasMarker", "marker": "shaft", "matchOrientation": true },
+                      { "type": "not", "predicate": { "type": "hasMarker", "marker": "gear_center" } }
+                    ]
+                  }
+                ]
+              }
+            },
+            { "offset": [-1, 0, 0],  "markers": ["default_mark"] },
+            { "offset": [1, 0, 0],   "markers": ["default_mark"] },
+            { "offset": [0, -1, 0],  "markers": ["default_mark"] },
+            { "offset": [0, 1, 0],   "markers": ["default_mark"] },
+            { "offset": [1, 1, 0],   "markers": ["small_gear_attachment"] },
+            { "offset": [-1, 1, 0],  "markers": ["small_gear_attachment"] },
+            { "offset": [1, -1, 0],  "markers": ["small_gear_attachment"] },
+            { "offset": [-1, -1, 0], "markers": ["small_gear_attachment"] }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "motor", "isEntity": true,
+      "cells": [{ "offset": [0, 0, 0], "markers": ["default_mark"] }],
+      "configurations": [
+        { "orientation": 0 },
+        { "orientation": 1 },
+        { "orientation": 2 }
+      ]
+    },
+
+    {
+      "id": "floor",
+      "isEntity": false, "playerPlaceable": false,
+      "configurations": [{"orientation": 0, "cells": [ { "offset": [0, 0, 0], "markers": ["floor", "support"] } ]}]
+    },
+
+    {
+      "id": "wall", "isEntity": false, "playerPlaceable": false,
+      "cells": [{ "offset": [0, 0, 0], "markers": ["wall", "attachable"] }],
+      "configurations": [{ "orientation": 0 }, { "orientation": 1 }
+      ]
+    },
+
+    {
+      "id": "wall_corner", "isEntity": false, "playerPlaceable": false,
+      "configurations": [{"orientation": 0, "cells": [ { "offset": [0, 0, 0], "markers": ["wall"] } ]}]
+    }
+  ]
+}

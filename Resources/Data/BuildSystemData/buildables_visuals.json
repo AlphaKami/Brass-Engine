@@ -1,0 +1,61 @@
+{
+  "visuals": [
+    {
+      "buildable": "test_crate",
+      "orientations": [
+        { "orientation": 0, "sprite": { "sheet": "Cube", "tile": "cube" }, "origin": [16, 16] }
+      ]
+    },
+    {
+      "buildable": "shaft",
+      "orientations": [
+        { "orientation": 0, "animation": { "sheet": "KineticSet", "name": "Shaft_Right" }, "origin": [16, 16] },
+        { "orientation": 1, "animation": { "sheet": "KineticSet", "name": "Shaft_Left" },  "origin": [16, 16] },
+        { "orientation": 2, "animation": { "sheet": "KineticSet", "name": "Shaft_Vert" },  "origin": [16, 16] }
+      ]
+    },
+    {
+      "buildable": "gear",
+      "orientations": [
+        { "orientation": 0, "animation": { "sheet": "KineticSet", "name": "Gear_Right" }, "origin": [16, 16] },
+        { "orientation": 1, "animation": { "sheet": "KineticSet", "name": "Gear_Left" },  "origin": [16, 16] },
+        { "orientation": 2, "animation": { "sheet": "KineticSet", "name": "Gear_Vert" },  "origin": [16, 16] }
+      ]
+    },
+    {
+      "buildable": "large_gear",
+      "orientations": [
+        { "orientation": 0, "animation": { "sheet": "KineticSet", "name": "Large_Gear_Right" }, "origin": [24, 24] },
+        { "orientation": 1, "animation": { "sheet": "KineticSet", "name": "Large_Gear_Left" },  "origin": [24, 24] },
+        { "orientation": 2, "animation": { "sheet": "KineticSet", "name": "Large_Gear_Vert" },  "origin": [24, 24] }
+      ]
+    },
+    {
+      "buildable": "motor",
+      "orientations": [
+        { "orientation": 0, "animation": { "sheet": "KineticSet", "name": "Shaft_Right" }, "origin": [16, 16] },
+        { "orientation": 1, "animation": { "sheet": "KineticSet", "name": "Shaft_Left" },  "origin": [16, 16] },
+        { "orientation": 2, "animation": { "sheet": "KineticSet", "name": "Shaft_Vert" },  "origin": [16, 16] }
+      ]
+    },
+    {
+      "buildable": "floor",
+      "orientations": [
+        { "orientation": 0, "sprite": { "sheet": "TestTilesheet", "tile": "default_tile" }, "origin": [16, 16] }
+      ]
+    },
+    {
+      "buildable": "wall",
+      "orientations": [
+        { "orientation": 0, "sprite": { "sheet": "TestTilesheet", "tile": "default_wallR" }, "origin": [16, 16] },
+        { "orientation": 1, "sprite": { "sheet": "TestTilesheet", "tile": "default_wallL" }, "origin": [16, 16] }
+      ]
+    },
+    {
+      "buildable": "wall_corner",
+      "orientations": [
+        { "orientation": 0, "sprite": { "sheet": "TestTilesheet", "tile": "default_corner" }, "origin": [16, 16] }
+      ]
+    }
+  ]
+}
